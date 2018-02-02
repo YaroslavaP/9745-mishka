@@ -1,0 +1,79 @@
+.field-radio {
+
+  margin-bottom: 16px;
+  display: block;
+
+  @media(min-width: 768px) {
+    width: 500px;
+    margin-bottom: 25px;
+  }
+}
+
+
+.field-radio__button {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-right: 23px;
+  width: 34px;
+  height: 34px;
+  border: 3px solid #444444;
+  border-radius: 50%;
+
+  @media(min-width: 768px) {
+    width: 46px;
+    height: 46px;
+    margin-right: 29px;
+  }
+}
+
+.field-radio__button:hover {
+  border-color: #62d1ba;
+}
+
+.field-radio__button:active {
+  border-color: #c7c7c7;
+}
+
+.field-radio__button::after {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 9px;
+  background: #62d1ba;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  @media(min-width: 768px) {
+    width: 22px;
+    height: 22px;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+.field-radio__text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 180px;
+  padding-top: 8px;
+
+  @media(min-width: 768px) {
+    width: 300px;
+    padding-top: 15px;
+  }
+
+  @media(min-width: 1150px) {
+    padding-top: 13px;
+  }
+}
+
+.field-radio__input {
+  display: none;
+}
+
+.field-radio__input:checked +.field-radio__button::after {
+  display: block;
+}

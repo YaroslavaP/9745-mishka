@@ -1,0 +1,366 @@
+.main-nav {
+  position: relative;
+  z-index: 10;
+
+  @media(min-width: 768px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+  }
+}
+
+
+.main-nav__list {
+  .ul();
+  font-size: 0;
+
+  @media(min-width: 768px) {
+    order: -2;
+  }
+
+  @media(min-width: 1150px) {
+    order: -4;
+    padding-left: 15px;
+  }
+}
+
+.main-nav__item {
+
+  @media(min-width: 768px) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 167px;
+}
+
+@media(min-width: 1150px) {
+    width: 220px;
+  }
+}
+
+.main-nav__item:nth-child(1) {
+  @media(min-width: 1150px) {
+    border-right: 1px solid #ececec;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 29px;
+  padding-left: 45px;
+  text-align: left;
+  border-top: 1px solid #ececec;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+
+  @media(min-width: 768px) {
+    padding-left: 0;
+    padding-right: 25px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border-top: none;
+    font-size: 15px;
+  }
+
+  @media(min-width: 1150px) {
+    padding-left: 31px;
+    padding-right: 30px;
+    padding-top: 32px;
+    padding-bottom: 34px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+.main-nav__link:hover {
+  color: #8d8d8d;
+}
+
+.main-nav__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+.main-nav__list-extra {
+  display: none;
+
+  @media(min-width: 1150px) {
+    display: block;
+    .ul();
+
+    font-size: 0;
+    order: -1;
+  }
+}
+
+.main-nav__item-extra {
+  @media(min-width: 1150px) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.main-nav__link-extra {
+  @media(min-width: 1150px) {
+    display: block;
+    padding: 15px 0;
+    padding-left: 50px;
+    padding-right: 13px;
+    line-height: 24px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.main-nav__link-extra:hover {
+  color: #666666;
+}
+
+.main-nav__link-extra:active {
+  color: #b2b2b2;
+}
+
+/******************************/
+
+
+/*Меню для пользователя***********************/
+
+.main-nav__user-list {
+  .ul();
+  font-size: 0;
+
+  @media(min-width: 768px) {
+    order: -3;
+  }
+
+  @media(min-width: 1150px) {
+    order: -2;
+    padding-right: 15px;
+  }
+}
+
+.main-nav__user-item {
+
+  @media(min-width: 768px) {
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 1px solid #ececec;
+  }
+}
+
+.main-nav__user-link {
+  position: relative;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 29px;
+  padding-left: 45px;
+  text-align: left;
+  border-top: 1px solid #ececec;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+
+  @media(min-width: 768px) {
+    border: none;
+    padding-left: 0;
+    padding-top: 30px;
+    padding-bottom: 34px;
+  }
+}
+
+.main-nav__user-link--search {
+  @media(min-width: 768px) {
+    width: 82px;
+    min-height: 24px;
+  }
+}
+
+.main-nav__user-icon-search {
+  position: absolute;
+  width: 18px;
+  height: 20px;
+  top: 30px;
+  left: 2px;
+  fill: rgba(0, 0, 0, 0.2);
+
+  @media(min-width: 768px) {
+    top: 35px;
+    left: 30px;
+  }
+}
+
+.main-nav__user-link--search:hover .main-nav__user-icon-search {
+  fill: #63d1bb;
+}
+
+.main-nav__user-link--search:active .main-nav__user-icon-search {
+  fill: #d0f1ea;
+}
+
+.main-nav__user-icon-cart {
+  position: absolute;
+  width: 21px;
+  height: 18px;
+  top: 30px;
+  left: 2px;
+  fill: rgba(0, 0, 0, 0.2);
+
+  @media(min-width: 768px) {
+  top: 34px;
+  left: 32px;
+  }
+}
+
+.main-nav__user-link--cart {
+  @media(min-width: 768px) {
+    width: 264px;
+    text-align: right;
+  }
+
+  @media(min-width: 1150px) {
+    padding-right: 37px;
+    padding-top: 32px;
+  }
+}
+
+.main-nav__user-link--cart:hover {
+  color: #8d8d8d;
+}
+
+.main-nav__user-link--cart:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__user-link--cart:hover .main-nav__user-icon-cart {
+  fill: #63d1bb;
+}
+
+.main-nav__user-link--cart:active .main-nav__user-icon-cart {
+  fill: #d0f1ea;
+}
+
+.main-nav__delivery {
+  display: none;
+
+  @media(min-width: 768px) {
+    order: -1;
+    flex-grow: 1;
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    padding-top: 16px;
+    text-align: right;
+  }
+
+  @media(min-width: 1150px) {
+    order: 0;
+    padding-right: 50px;
+  }
+}
+/******************************/
+
+
+/*Для мобильников**************************/
+
+@media(max-width: 767px) {
+
+  .main-nav--opened .main-nav__list {
+
+    z-index: 10;
+    background: white;
+    left: -30px;
+    right: -30px;
+  }
+
+  .main-nav--opened .main-nav__item {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  .main-nav--opened .main-nav__user-list {
+    z-index: 10;
+    top: 233px;
+    background: white;
+    left: -30px;
+    right: -30px;
+  }
+
+  .main-nav--opened .main-nav__user-item {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  .main-nav--closed .main-nav__list,
+  .main-nav--closed .main-nav__user-list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list,
+  .main-nav--nojs .main-nav__user-list {
+    display: block;
+    position: static;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  position: absolute;
+  z-index: 10;
+  content: "";
+  width: 22px;
+  height: 24px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 41px;
+  padding-bottom: 35px;
+  top: 0;
+  right: -15px;
+  background: transparent;
+  background-image: url("../img/icon-menu-open.svg");
+  .bg();
+  cursor: pointer;
+  border: none;
+
+  @media(min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: absolute;
+  z-index: 10;
+  content: "";
+  width: 21px;
+  height: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 37px;
+  padding-bottom: 35px;
+  top: 0;
+  right: -15px;
+  background: transparent;
+  background-image: url("../img/icon-menu-close.svg");
+  .bg();
+  cursor: pointer;
+  border: none;
+
+  @media(min-width: 768px) {
+    display: none;
+  }
+}

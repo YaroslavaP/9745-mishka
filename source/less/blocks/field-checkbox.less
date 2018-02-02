@@ -1,0 +1,83 @@
+.field-checkbox {
+  display: block;
+  margin-bottom: 22px;
+
+
+  @media(min-width: 768px) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 235px;
+    margin-right: 28px;
+    margin-bottom: 24px;
+  }
+}
+
+.field-checkbox:nth-child(2n) {
+  @media(min-width: 768px) {
+    margin-right: 0;
+  }
+
+  @media(min-width: 1150px) {
+    margin-right: 28px;
+  }
+}
+
+.field-checkbox__button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 21px;
+  position: relative;
+  width: 37px;
+  height: 35px;
+  border: 2px solid #444444;
+
+  @media(min-width: 768px) {
+    width: 50px;
+    height: 48px;
+    margin-right: 27px;
+  }
+}
+
+.field-checkbox__button:hover {
+  border-color: #62d1ba;
+}
+
+.field-checkbox__button:active {
+  border-color: #c7c7c7;
+}
+
+.field-checkbox__button::before {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 7px;
+  width: 22px;
+  height: 16px;
+  .bg();
+  background-image: url("../img/icon-tick.svg");
+  -webkit-background-size: contain;
+  background-size: contain;
+
+  @media(min-width: 768px) {
+    width: 33px;
+    height: 22px;
+    left: 9;
+    top: 14px;
+  }
+}
+
+
+.field-checkbox__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.field-checkbox__input:checked + .field-checkbox__button::before {
+  display: block;
+}
+
+
+.field-checkbox__input {
+  display: none;
+}

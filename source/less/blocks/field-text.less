@@ -1,0 +1,139 @@
+.field-text {
+  position: relative;
+  display: block;
+  margin-bottom: 13px;
+  padding-top: 4px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 17px;
+  }
+}
+
+.field-text__input {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: rgb(68, 68, 68);
+
+  @media(min-width: 768px) {
+    width: 375px;
+    margin-left: 18px;
+    padding-left: 18px;
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  @media(min-width: 1150px) {
+    width: 575px;
+  }
+}
+
+.field-text__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(68, 68, 68, 0.3);
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+.field-text__input::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(68, 68, 68, 0.3);
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+.field-text__input:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(68, 68, 68, 0.3);
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+
+.field-text__input:hover {
+  border-color: #62d1ba;
+}
+
+.field-text__input:active {
+  border-color: #62d1ba;
+}
+
+.field-text__input--long {
+  @media(min-width: 768px) {
+    width: 425px;
+    margin-left: 20px;
+  }
+
+  @media(min-width: 1150px) {
+    width: 625px;
+  }
+}
+
+.field-text__input--100 {
+    width: 100%;
+    margin: 0;
+    padding-bottom:10px;
+
+  @media(min-width: 768px) {
+    width: 100%;
+    margin: 0;
+  }
+
+  @media(min-width: 1150px) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+.field-text__icon-phone {
+  position: absolute;
+  width: 25px;
+  height: 24px;
+  right: 7px;
+  bottom: 17px;
+  fill: #cccccc;
+
+  @media(min-width: 768px) {
+    right: 25px;
+  }
+
+  @media(min-width: 1150px) {
+    right: 8px;
+  }
+}
+
+.field-text:hover .field-text__icon-phone {
+  fill: #62d1ba;
+}
+
+.field-text:active .field-text__icon-phone {
+  fill: #62d1ba;
+}
+
+.field-text__icon-mail {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 4px;
+  bottom: 10px;
+  fill: #cccccc;
+
+  @media(min-width: 768px) {
+    right: 22px;
+  }
+
+  @media(min-width: 1150px) {
+    right: 4px;
+  }
+}
+
+.field-text:hover .field-text__icon-mail {
+  fill: #62d1ba;
+}
+
+.field-text:active .field-text__icon-mail {
+  fill: #62d1ba;
+}

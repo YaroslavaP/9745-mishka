@@ -1,0 +1,49 @@
+.popular {
+  position: relative;
+  margin-bottom: 40px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  @media(min-width: 1150px) {
+    padding-top: 46px;
+    margin-bottom: 80px;
+  }
+}
+
+.popular::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: -42px;
+  height: 7px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
+
+  @media(min-width: 768px) {
+  bottom: -70px;
+  height: 21px;
+  }
+
+  @media(min-width: 1150px) {
+    bottom: -95px;
+    height: 26px;
+  }
+}
+
+.popular__wrapper {
+  position: relative;
+  .container();
+
+  @media(min-width: 768px) {
+    width: 670px;
+  }
+
+  @media(min-width: 1150px) {
+    width: 1050px;
+  }
+}
