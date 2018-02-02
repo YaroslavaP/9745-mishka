@@ -1,0 +1,137 @@
+.categories {
+  font-size: 0;
+}
+
+.categories__wrapper {
+  position: relative;
+  @media(min-width: 768px) {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media(min-width: 1150px) {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.categories__item {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  font-size: 19px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: bold;
+
+  @media(min-width: 768px) {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+.categories__item--left {
+  background-color: #63d1bb;
+}
+
+.categories__item--left:hover {
+  background-color: #59d5bc;
+}
+
+.categories__item--left:active {
+  background-color: #59d5bc;
+}
+
+
+.categories__item--right {
+  background-color: #56c3b2;
+}
+
+.categories__item--right:hover {
+  background-color: #46c1ae;
+}
+
+.categories__item--right:active {
+  background-color: #46c1ae;
+}
+
+.categories__item--left:hover,
+.categories__item--right:hover {
+  transform: scaleY(1.05);
+}
+
+.categories__text:hover {
+  transform: translateY(-5px);
+}
+
+.categories__text {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  padding-right: 130px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+
+  @media(min-width: 768px) {
+    width: 265px;
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 30px;
+  }
+  @media(min-width: 1150px) {
+    width: 455px;
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 29px;
+    padding-right: 315px;
+  }
+}
+
+.categories__item:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.categories__item .categories__icon {
+  position: absolute;
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.categories__item:hover .categories__icon {
+  fill: rgba(20, 144, 128, 0.7);
+  transform: translateY(-5px);
+}
+
+.categories__item:active .categories__icon {
+  fill: rgba(20, 144, 128, 0.3);
+}
+
+.categories__icon--interior {
+  width: 41px;
+  height: 62px;
+  top: 20px;
+  right: 35px;
+
+  @media(min-width: 768px) {
+  top: 30px;
+  right: 35px;
+  }
+}
+
+.categories__icon--toys {
+  width: 60px;
+  height: 60px;
+  right: 26px;
+  top: 20px;
+
+  @media(min-width: 768px) {
+    right: 33px;
+    top: 30px;
+  }
+}

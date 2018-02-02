@@ -1,0 +1,92 @@
+.section-head {
+  position: relative;
+  background: #f1f1f1;
+  padding-top: 69px;
+  padding-bottom: 77px;
+  margin-bottom: 30px;
+
+  @media(min-width: 768px) {
+    padding-top: 93px;
+    padding-bottom: 85px;
+    margin-top: -62px;
+    margin-bottom: 77px;
+  }
+
+  @media(min-width: 1150px) {
+    padding-bottom: 100px;
+    padding-top: 95px;
+    margin-top: -58px;
+    margin-bottom: 132px;
+  }
+}
+
+.section-head::after {
+  @media(min-width: 768px) {
+    position: absolute;
+    content: "";
+    height: 33px;
+    left: 0;
+    right: 0;
+    bottom: -18px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+  }
+
+  @media(min-width: 1150px) {
+    bottom: -27px;
+    height: 45px;
+  }
+}
+
+.section-head--form {
+  margin-bottom: 22px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 70px;
+  }
+
+  @media(min-width: 1150px) {
+    margin-bottom: 124px;
+  }
+}
+
+
+
+.section-head__title {
+  position: relative;
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+  .container();
+
+  @media(min-width: 768px) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media(min-width: 1150px) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.section-head__title::before {
+
+  @media(min-width: 768px) {
+    position: absolute;
+    content: "";
+    background: #e7e7e7;
+    height: 1px;
+    top: -93px;
+    left: -50px;
+    right: -50px;
+  }
+
+  @media(min-width: 1150px) {
+    top: -95px;
+  }
+}

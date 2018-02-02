@@ -1,0 +1,151 @@
+.order {
+  margin-bottom: 35px;
+}
+
+
+.order__fieldset {
+  width: 260px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  position: relative;
+  border: none;
+
+  @media(min-width: 768px) {
+    font-size: 0;
+    width: 680px;
+    border: none;
+    margin-bottom: 0;
+  }
+
+  @media(min-width: 1150px) {
+    width: 1050px;
+    padding-left: 0;
+  }
+}
+
+.order__fieldset-bg {
+  @media(min-width: 768px) {
+    background: #f1f1f1;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+.order__fieldset-bg--tel {
+  @media(min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+}
+
+.order__text {
+  margin: 0;
+  .container();
+  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+
+  @media(min-width: 768px) {
+    margin-bottom: 55px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media(min-width: 1150px) {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+}
+
+.fieldset__wrapper {
+  @media(min-width: 768px) {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+  }
+
+  @media(min-width: 1150px) {
+    width: 700px;
+  }
+}
+
+.fieldset__wrapper--wide {
+
+  @media(min-width: 1150px) {
+    width: 875px;
+  }
+}
+
+.order__field-title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+  text-align: left;
+
+  @media(min-width: 768px) {
+    margin-top: 15px;
+    display: inline-block;
+    vertical-align: top;
+    width: 167px;
+    text-align: left;
+    padding-right: 0;
+  }
+
+  @media(min-width: 1150px) {
+    width: 175px;
+    text-align: center;
+  }
+}
+
+.order__field-title::after {
+  @media(max-width: 767px) {
+    position: absolute;
+    content: "";
+    left: 60px;
+    right: 0;
+    top: 10px;
+    height: 1px;
+    width: 200px;
+    background: #62d1ba;
+  }
+}
+
+
+
+
+
+.order__contact-field {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+
+  @media(min-width: 768px) {
+    font-size: 19px;
+    line-height: 23px;
+  }
+}
+
+.order__remark {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+
+  @media(min-width: 768px) {
+    margin-top: 65px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

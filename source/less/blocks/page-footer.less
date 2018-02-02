@@ -1,0 +1,151 @@
+.page-footer {
+  background: #f1f1f1;
+
+  @media(min-width: 768px) {
+    padding: 35px 0;
+  }
+}
+
+.page-footer__wrapper {
+  .container();
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media(min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media(min-width: 768px) {
+    display: block;
+    width: 102px;
+    height: 34px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    padding-right: 55px;
+  }
+}
+
+.page-footer__logo-icon {
+  fill: #000;
+}
+
+.page-footer__logo:hover .page-footer__logo-icon {
+  fill: #46c1ae;
+}
+
+.page-footer__logo:active .page-footer__logo-icon {
+  fill: #bde3dd;
+}
+
+.page-footer__social {
+  padding-top: 21px;
+  padding-bottom: 16px;
+  text-align: center;
+
+  @media(min-width: 768px) {
+    margin-left: 26px;
+    padding-top: 16px;
+    padding-bottom: 9px;
+  }
+}
+
+.page-footer__soc-btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 5px;
+  margin-left: 6px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.page-footer__soc-btn:hover svg {
+  fill: #46c1ae;
+}
+
+.page-footer__soc-btn:active svg {
+  fill: #bde3dd;
+}
+
+.page-footer__icon-insta {
+  width: 22px;
+  height: 22px;
+}
+
+.page-footer__icon-fb {
+  width: 14px;
+  height: 29px;
+}
+
+.page-footer__icon-twitter {
+  width: 24px;
+  height: 20px;
+}
+
+.page-footer__copyright {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e5e5e5;
+
+  @media(min-width: 768px) {
+    border-top: 0;
+    width: 185px;
+    padding-bottom: 26px;
+  }
+}
+
+.page-footer__copyright:hover .page-footer__text-icon {
+  fill: #46c1ae;
+}
+
+.page-footer__copyright:active .page-footer__text-icon {
+  fill: #bde3dd;
+}
+
+.page-footer__copyright:active .page-footer__text {
+  color: #a8a8a8;
+}
+
+.page-footer__text {
+  padding-right: 30px;
+  padding-left: 38px;
+  display: block;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 23px;
+  color: #000;
+  font-weight: bold;
+
+  @media(min-width: 768px) {
+    text-align: left;
+    padding-left: 0;
+  }
+}
+
+.page-footer__text-icon {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  right: 31px;
+  top: -10px;
+  fill: #63d1bb;
+
+  @media(min-width: 768px) {
+    right: -5px;
+    top: -9px;
+  }
+}

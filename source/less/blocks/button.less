@@ -1,0 +1,97 @@
+.btn {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #444444;
+  border: 2px solid #444444;
+  background-color: transparent;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: "OpenSans", "Arial", sans-serif;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #444444;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: #444444;
+  color: #7c7c7c;
+}
+
+.btn--item {
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+
+.btn--feedbacks {
+  padding-bottom: 14px;
+  @media(min-width: 768px) {
+    position: absolute;
+    width: 175px;
+    top: 77px;
+    right: 0;
+  }
+}
+
+.btn--contacts {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+
+  @media(min-width: 768px) {
+    width: 230px;
+    margin-bottom: 55px;
+  }
+
+  @media(min-width: 1150px) {
+    position: static;
+    margin: 0;
+    margin-left: 175px;
+  }
+}
+
+.btn--catalog-video {
+  margin-bottom: 32px;
+  padding-bottom: 13px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 45px;
+  }
+
+  @media(min-width: 1150px) {
+    margin-bottom: 62px;
+  }
+}
+
+.btn--form {
+  display: inline-block;
+  vertical-align: middle;
+
+  @media(min-width: 768px) {
+    width: 230px;
+    position: absolute;
+    left: 5px;
+    bottom: 15px;
+  }
+
+  @media(min-width: 1150px) {
+    left: 175px;
+    bottom: 16px;
+  }
+}
+
+.btn--modal {
+  background: #63d1bb;
+  color: #fff;
+  border: 0;
+  margin-bottom: 45px;
+}
