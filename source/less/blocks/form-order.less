@@ -1,5 +1,14 @@
 .order {
   margin-bottom: 35px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 33px;
+  }
+
+@media(min-width: 1150px) {
+  margin-bottom: 29px;
+  }
+
 }
 
 
@@ -7,20 +16,31 @@
   width: 260px;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 32px;
   position: relative;
   border: none;
+&-texterea{
+  margin-bottom: 53px;
+}
+
+
 
   @media(min-width: 768px) {
     font-size: 0;
     width: 680px;
     border: none;
-    margin-bottom: 0;
+    margin-bottom: 33px;
   }
 
   @media(min-width: 1150px) {
     width: 1050px;
     padding-left: 0;
+    margin-bottom: 27px;
+
+&--name{
+  margin-bottom: 32px;
+}
+
   }
 }
 
@@ -31,14 +51,24 @@
     padding-bottom: 25px;
     margin-bottom: 50px;
   }
+  @media(min-width: 1150px) {
+   padding-bottom: 27px;
+}
 }
 
 .order__fieldset-bg--tel {
   @media(min-width: 768px) {
     padding-top: 50px;
-    padding-bottom: 25px;
+    padding-bottom: 36px;
   }
+@media(min-width: 1150px) {
+   padding-bottom: 38px;
+
+  }
+
 }
+
+
 
 .order__text {
   margin: 0;
@@ -83,7 +113,7 @@
 .order__field-title {
   position: relative;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -95,7 +125,7 @@
     margin-top: 15px;
     display: inline-block;
     vertical-align: top;
-    width: 167px;
+
     text-align: left;
     padding-right: 0;
   }
@@ -103,6 +133,7 @@
   @media(min-width: 1150px) {
     width: 175px;
     text-align: center;
+padding-left: 0;
   }
 }
 
@@ -131,7 +162,7 @@
 
 .order__remark {
   display: block;
-  margin-top: 15px;
+  margin-top: 6px;
   margin-bottom: 30px;
   text-align: right;
   font-size: 14px;
@@ -139,7 +170,7 @@
   color: #444444;
 
   @media(min-width: 768px) {
-    margin-top: 65px;
+    margin-top: 45px;
     font-size: 17px;
     line-height: 30px;
   }
