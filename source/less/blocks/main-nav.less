@@ -2,7 +2,7 @@
   position: relative;
   z-index: 10;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -19,11 +19,11 @@
   .ul();
   font-size: 0;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     order: -2;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     order: -4;
     padding-left: 15px;
   }
@@ -31,19 +31,19 @@
 
 .main-nav__item {
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
   display: inline-block;
   vertical-align: middle;
   width: 167px;
 }
 
-@media(min-width: 1150px) {
+@media (min-width: 1150px) {
     width: 220px;
   }
 }
 
 .main-nav__item:nth-child(1) {
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     border-right: 1px solid #ececec;
   }
 }
@@ -59,9 +59,9 @@
   line-height: 24px;
   text-decoration: none;
   font-weight: bold;
-  color: #000;
+  color: #000000;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     padding-left: 0;
     padding-right: 25px;
     padding-top: 16px;
@@ -70,7 +70,7 @@
     font-size: 15px;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     padding-left: 31px;
     padding-right: 30px;
     padding-top: 32px;
@@ -93,24 +93,23 @@
 .main-nav__list-extra {
   display: none;
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     display: block;
     .ul();
-
     font-size: 0;
     order: -1;
   }
 }
 
 .main-nav__item-extra {
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     display: inline-block;
     vertical-align: middle;
   }
 }
 
 .main-nav__link-extra {
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     display: block;
     padding: 15px 0;
     padding-left: 50px;
@@ -131,16 +130,11 @@
   color: #b2b2b2;
 }
 
-/******************************/
-
-
-/*Меню для пользователя***********************/
-
 .main-nav__user-list {
   .ul();
   font-size: 0;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     order: -3;
   }
 
@@ -152,7 +146,7 @@
 
 .main-nav__user-item {
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     display: inline-block;
     vertical-align: middle;
     border-left: 1px solid #ececec;
@@ -173,7 +167,7 @@
   font-weight: bold;
   color: #000;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     border: none;
     padding-left: 0;
     padding-top: 30px;
@@ -182,7 +176,7 @@
 }
 
 .main-nav__user-link--search {
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 82px;
     min-height: 24px;
   }
@@ -196,7 +190,7 @@
   left: 2px;
   fill: rgba(0, 0, 0, 0.2);
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     top: 35px;
     left: 30px;
   }
@@ -218,19 +212,19 @@
   left: 2px;
   fill: rgba(0, 0, 0, 0.2);
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
   top: 34px;
   left: 32px;
   }
 }
 
 .main-nav__user-link--cart {
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 264px;
     text-align: right;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     padding-right: 37px;
     padding-top: 32px;
   }
@@ -255,7 +249,7 @@
 .main-nav__delivery {
   display: none;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     order: -1;
     flex-grow: 1;
     display: block;
@@ -265,20 +259,14 @@
     text-align: right;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     order: 0;
     padding-right: 50px;
   }
 }
-/******************************/
 
-
-/*Для мобильников**************************/
-
-@media(max-width: 767px) {
-
+@media (max-width: 767px) {
   .main-nav--opened .main-nav__list {
-
     z-index: 10;
     background: white;
     left: -30px;
@@ -337,7 +325,7 @@
   cursor: pointer;
   border: none;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -360,7 +348,7 @@
   cursor: pointer;
   border: none;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
