@@ -4,15 +4,20 @@
   margin-bottom: 13px;
   padding-top: 4px;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     margin-bottom: 17px;
+    padding-top: 0;
+  }
+
+  @media (min-width: 1150px) {
+    padding-top: 0;
   }
 }
 
 .field-text__input {
   width: 100%;
   padding-top: 16px;
-  padding-bottom: 17px;
+  padding-bottom: 14px;
   background: transparent;
   border: none;
   border-bottom: 2px solid black;
@@ -23,30 +28,31 @@
   line-height: 17px;
   color: rgb(68, 68, 68);
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 375px;
     margin-left: 18px;
     padding-left: 18px;
     font-size: 19px;
     line-height: 19px;
+    padding-bottom: 13px;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     width: 575px;
   }
 }
 
-.field-text__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.field-text__input::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
   font-family: "OpenSans", "Arial", sans-serif;
 }
 
-.field-text__input::-moz-placeholder { /* Firefox 19+ */
+.field-text__input::-moz-placeholder {
   color: rgba(68, 68, 68, 0.3);
   font-family: "OpenSans", "Arial", sans-serif;
 }
 
-.field-text__input:-ms-input-placeholder { /* IE 10+ */
+.field-text__input:-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
   font-family: "OpenSans", "Arial", sans-serif;
 }
@@ -61,27 +67,27 @@
 }
 
 .field-text__input--long {
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 425px;
     margin-left: 20px;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     width: 625px;
   }
 }
 
 .field-text__input--100 {
-    width: 100%;
-    margin: 0;
-    padding-bottom:10px;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 10px;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 100%;
     margin: 0;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     width: 100%;
     margin: 0;
   }
@@ -96,11 +102,11 @@
   bottom: 17px;
   fill: #cccccc;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     right: 25px;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     right: 8px;
   }
 }
@@ -121,11 +127,11 @@
   bottom: 10px;
   fill: #cccccc;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     right: 22px;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     right: 4px;
   }
 }

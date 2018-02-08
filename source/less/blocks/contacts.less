@@ -1,13 +1,13 @@
 .contacts {
   padding-top: 35px;
 
-  @media(min-width: 768px) {
-    padding-top: 61px;
+  @media (min-width: 768px) {
+    padding-top: 59px;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     padding-top: 70px;
-    margin-bottom: 103px;
+    margin-bottom: 105px;
   }
 }
 
@@ -16,7 +16,7 @@
   margin: 0 auto;
   .clearfix();
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     width: 1050px;
   }
 }
@@ -27,12 +27,12 @@
   margin: 0 auto;
   font-size: 0;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 670px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     float: left;
     width: 300px;
     padding-left: 173px;
@@ -42,19 +42,18 @@
 }
 
 .contacts__text-wrapper::before {
-
-  @media(min-width: 768px) {
-  position: absolute;
-  content: "";
-  top: -13px;
-  right: 4px;
-  width: 47px;
-  height: 80px;
-  background-image: url("../img/icon-flag.svg");
-  .bg();
+  @media (min-width: 768px) {
+    position: absolute;
+    content: "";
+    top: -13px;
+    right: 4px;
+    width: 47px;
+    height: 80px;
+    background-image: url("../img/icon-flag.svg");
+    .bg();
   }
 
-  @media(min-width:1150px) {
+  @media (min-width: 1150px) {
     top: 64px;
     left: 63px;
   }
@@ -65,16 +64,16 @@
   margin-bottom: 27px;
   font-size: 18px;
   line-height: 30px;
-  color: #000;
+  color: #000000;
   text-align: left;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     margin-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 46px;
@@ -85,13 +84,13 @@
   width: 100%;
   font-size: 0;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     display: inline-block;
     vertical-align: top;
     width: 50%;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     display: block;
     width: 100%;
   }
@@ -118,7 +117,7 @@
 .contacts__text--address {
   margin-bottom: 35px;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     margin-bottom: 25px;
   }
 }
@@ -133,7 +132,7 @@
   color: #444444;
   box-sizing: border-box;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 17px;
     line-height: 30px;
   }
@@ -147,11 +146,11 @@
   width: 180px;
   padding-right: 30px;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 255px;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     width: 222px;
     padding-right: 0;
   }
@@ -162,11 +161,11 @@
   height: 455px;
   border: none;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     margin-bottom: 47px;
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     float: right;
     width: 525px;
     margin-left: 50px;
@@ -181,39 +180,33 @@
 .map-image {
   width: 100%;
   height: 455px;
-  margin-bottom: 45px;
-  background-image: url("../../img/icon-map-pin.svg"),
-  url("../../img/map-mobile@1x.jpg");
+  margin-bottom: 41px;
+  background-image: url("../../img/icon-map-pin.svg"), url("../../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 
-  @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../../img/icon-map-pin.svg"),
-    url("../../img/map-mobile@2x.jpg");
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../../img/icon-map-pin.svg"), url("../../img/map-mobile@2x.jpg");
   }
 
-  @media(min-width: 768px) {
-    margin-bottom: 47px;
-    background-image: url("../../img/icon-map-pin.svg"),
-    url("../../img/map-tablet@1x.jpg");
+  @media (min-width: 768px) {
+    margin-bottom: 57px;
+    background-image: url("../../img/icon-map-pin.svg"), url("../../img/map-tablet@1x.jpg");
 
-    @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../../img/icon-map-pin.svg"),
-      url("../../img/map-tablet@2x.jpg");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../../img/icon-map-pin.svg"), url("../../img/map-tablet@2x.jpg");
     }
   }
 
-  @media(min-width: 1150px) {
+  @media (min-width: 1150px) {
     float: right;
     width: 525px;
     margin-left: 50px;
     margin-bottom: 0;
-    background-image: url("../../img/icon-map-pin.svg"),
-    url("../../img/map-desktop@1x.jpg");
+    background-image: url("../../img/icon-map-pin.svg"), url("../../img/map-desktop@1x.jpg");
 
-    @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../../img/icon-map-pin.svg"),
-      url("../../img/map-desktop@2x.jpg");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../../img/icon-map-pin.svg"), url("../../img/map-desktop@2x.jpg");
     }
   }
 }
