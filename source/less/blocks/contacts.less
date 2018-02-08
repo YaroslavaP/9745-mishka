@@ -42,22 +42,21 @@
 }
 
 .contacts__text-wrapper::before {
+ @media (min-width: 768px) {
+  position: absolute;
+  content: "";
+  top: -13px;
+  right: 4px;
+  width: 47px;
+  height: 80px;
+  background-image: url("../img/icon-flag.svg");
+  .bg();
+}
 
-  @media (min-width: 768px) {
-    position: absolute;
-    content: "";
-    top: -13px;
-    right: 4px;
-    width: 47px;
-    height: 80px;
-    background-image: url("../img/icon-flag.svg");
-    .bg();
-  }
-
-  @media (min-width:1150px) {
-    top: 64px;
-    left: 63px;
-  }
+@media (min-width:1150px) {
+  top: 64px;
+  left: 63px;
+}
 }
 
 .contacts__title {
@@ -65,7 +64,7 @@
   margin-bottom: 27px;
   font-size: 18px;
   line-height: 30px;
-  color: #000;
+  color: #000000;
   text-align: left;
 
   @media (min-width: 768px) {
