@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Проект Мишка: Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -147,10 +149,10 @@
 
     <section class="popular">
       <div class="popular__wrapper item">
-          <div class="item__title">
-            <h3 class="item__name">Вязаные корзинки</h3>
-            <span class="item__category">Товар недели</span>
-          </div>
+        <div class="item__title">
+          <h3 class="item__name">Вязаные корзинки</h3>
+          <span class="item__category">Товар недели</span>
+        </div>
           <div class="item__wrapper">
             <p class="item__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <table class="item__description">
@@ -197,7 +199,7 @@
               <input type="radio" class="modal__radio" name="size" id="L">
               <label for="L" class="modal__label">L</label>
             </div>
-            <button class="btn btn--modal add-to-cart" type="button">Добавить</button>
+            <button class="btn btn--modal add-to-cart" type="submit">Добавить</button>
           </form>
         </div>
       </div>
